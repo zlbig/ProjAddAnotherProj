@@ -41,7 +41,7 @@
 
 
 
-##### 关于 `A-App` 中 `B-App` 的更新
+#### 关于 `A-App` 中 `B-App` 的更新
 
 1. 如果 `B-App` 中没有新增或删除类文件，就直接复制替换 `A-App` 中的 `B-App` 就行。
 2. 如果 `B-App` 中有新增或删除类文件，就需要在 `A-App` 的 Build Phases 中的 Compile Sources 新增或删除对应的类文件。
