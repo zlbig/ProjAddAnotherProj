@@ -17,23 +17,19 @@
 
 
 
-然后将 `B-App` 的 `B-App.xcodeproj` "拖进" `A-App` 中（或者在 `A-App` 的工程中通过 "add files to A-App" 的方式将 `B-App.xcodeproj` 加入 `A-App` 中）。如图。
-![pic-2](https://github.com/zlbig/ProjAddAnotherProj/blob/master/pic-2.png)
+然后将 `B-App` 的 `B-App.xcodeproj` "拖进" `A-App` 中（或者在 `A-App` 的工程中通过 "add files to A-App" 的方式将 `B-App.xcodeproj` 加入 `A-App` 中）。如图。![pic-2](https://github.com/zlbig/ProjAddAnotherProj/blob/master/pic-2.png)
 
 
 
-之后，需要将 `B-App` 添加到 `A-App` 的 Build Phases 的 Target Dependencies 和 Link Binary With Libraries 中。如图。
-![pic-3](https://github.com/zlbig/ProjAddAnotherProj/blob/master/pic-3.png)
+之后，需要将 `B-App` 添加到 `A-App` 的 Build Phases 的 Target Dependencies 和 Link Binary With Libraries 中。如图。![pic-3](https://github.com/zlbig/ProjAddAnotherProj/blob/master/pic-3.png)
 
 
 
-最后，你需要为 `B-App` 在 `A-App` 的 Build Settings 中设置 HEADER_SEARCH_PATHS。如图。其中值得注意的是，头文件路径的完整性。
-![pic-4](https://github.com/zlbig/ProjAddAnotherProj/blob/master/pic-4.png)
+最后，你需要为 `B-App` 在 `A-App` 的 Build Settings 中设置 HEADER_SEARCH_PATHS。如图。其中值得注意的是，头文件路径的完整性。![pic-4](https://github.com/zlbig/ProjAddAnotherProj/blob/master/pic-4.png)
 
 
 
-`cmd + R ` 编译运行一下 `A-App` 发现报错了。如图。
-![pic-5](https://github.com/zlbig/ProjAddAnotherProj/blob/master/pic-5.png)
+`cmd + R ` 编译运行一下 `A-App` 发现报错了。如图。![pic-5](https://github.com/zlbig/ProjAddAnotherProj/blob/master/pic-5.png)
 
 
 
