@@ -14,31 +14,31 @@
 
 首先，在确保 Xcode 没有打开 `A-App` 和 `B-App` 的情况下，在 `A-App` 的 Finder 目录中，将 `B-App` 拷入指定文件夹（demo 中是直接放入 `A-App` 的一级目录，如图）。
 
-![pic-1](/Users/zl/Desktop/TesT-s/OC-Test/projectAddProj/pic-1.png)
+![pic-1](https://github.com/zlbig/ProjAddAnotherProj/blob/master/pic-1.png)
 
 
 
 然后将 `B-App` 的 `B-App.xcodeproj` "拖进" `A-App` 中（或者在 `A-App` 的工程中通过 "add files to A-App" 的方式将 `B-App.xcodeproj` 加入 `A-App` 中）。如图。
 
-![pic-2](/Users/zl/Desktop/TesT-s/OC-Test/projectAddProj/pic-2.png)
+![pic-2](https://github.com/zlbig/ProjAddAnotherProj/blob/master/pic-2.png)
 
 
 
-之后，需要将 `B-App` 添加到 `A-App` 的 Build Phases 的 Target Dependencies 和 Link Binary With Libraries 中。如图。![pic-3](/Users/zl/Desktop/TesT-s/OC-Test/projectAddProj/pic-3.png)
+之后，需要将 `B-App` 添加到 `A-App` 的 Build Phases 的 Target Dependencies 和 Link Binary With Libraries 中。如图。![pic-3](https://github.com/zlbig/ProjAddAnotherProj/blob/master/pic-3.png)
 
 
 
 最后，你需要为 `B-App` 在 `A-App` 的 Build Settings 中设置 HEADER_SEARCH_PATHS。如图。其中值得注意的是，头文件路径的完整性。
 
-![pic-4](/Users/zl/Desktop/TesT-s/OC-Test/projectAddProj/pic-4.png)
+![pic-4](https://github.com/zlbig/ProjAddAnotherProj/blob/master/pic-4.png)
 
 
 
-`cmd + R ` 编译运行一下 `A-App` 发现报错了。如图。![pic-5](/Users/zl/Desktop/TesT-s/OC-Test/projectAddProj/pic-5.png)
+`cmd + R ` 编译运行一下 `A-App` 发现报错了。如图。![pic-5](https://github.com/zlbig/ProjAddAnotherProj/blob/master/pic-5.png)
 
 
 
-不要慌。因为 `B-App` 的文件虽然可以被 `A-App` 引用，但是这些文件在 `A-App` 的编译来源中并不存在。所以在 `A-App` 的 Build Phases 中的 Compile Sources 添加工程中需要编译的类文件。（例如 `A-App` 使用 `B-App` 中的 `B` 功能模块，需要引入 `B` 模块所涉及到的所有 `.m` 文件到 `A-App` 中。此时的操作会涉及到一些第三方库，如果 `A-App` 和 `B-App` 均有使用相同版本的 `Masonry` ，就没有必要在 `A-App` 的 Compile Sources 中再次引入；如果仅仅是 `B-App` 有使用 `Masonry` ，就有必要在 `A-App` 的 Compile Sources 中引入 `Masonry` 的文件）如图。![pic-6](/Users/zl/Desktop/TesT-s/OC-Test/projectAddProj/pic-6.png)
+不要慌。因为 `B-App` 的文件虽然可以被 `A-App` 引用，但是这些文件在 `A-App` 的编译来源中并不存在。所以在 `A-App` 的 Build Phases 中的 Compile Sources 添加工程中需要编译的类文件。（例如 `A-App` 使用 `B-App` 中的 `B` 功能模块，需要引入 `B` 模块所涉及到的所有 `.m` 文件到 `A-App` 中。此时的操作会涉及到一些第三方库，如果 `A-App` 和 `B-App` 均有使用相同版本的 `Masonry` ，就没有必要在 `A-App` 的 Compile Sources 中再次引入；如果仅仅是 `B-App` 有使用 `Masonry` ，就有必要在 `A-App` 的 Compile Sources 中引入 `Masonry` 的文件）如图。![pic-6](https://github.com/zlbig/ProjAddAnotherProj/blob/master/pic-6.png)
 
 
 
