@@ -224,7 +224,6 @@
 				TargetAttributes = {
 					18751BF51F4A733300DBFCFD = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = 7NZW2F4X6L;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -425,7 +424,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7NZW2F4X6L;
+				DEVELOPMENT_TEAM = "";
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/B-App/B-App/",
 					"$(SRCROOT)/B-App/B-App/Masonry/",
@@ -437,7 +436,7 @@
 					"-ObjC",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhanglei.demo;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zlbig.A-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -446,7 +445,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7NZW2F4X6L;
+				DEVELOPMENT_TEAM = "";
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/B-App/B-App/",
 					"$(SRCROOT)/B-App/B-App/Masonry/",
@@ -458,7 +457,7 @@
 					"-ObjC",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhanglei.demo;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zlbig.A-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
