@@ -13,11 +13,14 @@
 
 
 首先，在确保 Xcode 没有打开 `A-App` 和 `B-App` 的情况下，在 `A-App` 的 Finder 目录中，将 `B-App` 拷入指定文件夹（demo 中是直接放入 `A-App` 的一级目录，如图）。
+
 ![pic-1](https://github.com/zlbig/ProjAddAnotherProj/blob/master/pic-1.png)
 
 
 
-然后将 `B-App` 的 `B-App.xcodeproj` "拖进" `A-App` 中（或者在 `A-App` 的工程中通过 "add files to A-App" 的方式将 `B-App.xcodeproj` 加入 `A-App` 中）。如图。![pic-2](https://github.com/zlbig/ProjAddAnotherProj/blob/master/pic-2.png)
+然后将 `B-App` 的 `B-App.xcodeproj` "拖进" `A-App` 中（或者在 `A-App` 的工程中通过 "add files to A-App" 的方式将 `B-App.xcodeproj` 加入 `A-App` 中）。如图。
+
+![pic-2](https://github.com/zlbig/ProjAddAnotherProj/blob/master/pic-2.png)
 
 
 
